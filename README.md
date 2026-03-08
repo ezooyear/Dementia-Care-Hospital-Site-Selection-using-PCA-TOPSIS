@@ -49,7 +49,19 @@ Due to licensing restrictions, the original datasets are not included in this re
 
 ## Analysis Pipeline
 
-Data Collection → Data Preprocessing → PCA (Region Selection) → Hospital Filtering (Ministry of Health Criteria) → TOPSIS (Hospital Ranking) → Final Hospital Selection
+```text
+Data Collection
+↓
+Data Preprocessing
+↓
+PCA Analysis (Region Selection)
+↓
+Hospital Filtering
+↓
+TOPSIS Analysis
+↓
+Final Hospital Selection
+```
 
 ---
 
@@ -162,7 +174,6 @@ This framework demonstrates how public healthcare data can be integrated with st
 ## Project Structure
 dementia-hospital-location-selection
 ```text
-dementia-hospital-location-selection
 
 data
 ├── raw_data
