@@ -42,6 +42,27 @@ Data sources include:
 - Health and welfare statistics
 - Regional administrative datasets
 
+Due to licensing restrictions, the original datasets are not included in this repository.
+--- 
+## Analysis Pipeline
+
+The project follows a two-stage analytical process.
+
+Data Collection
+↓
+Data Preprocessing
+↓
+PCA Analysis
+(Region Selection)
+↓
+Hospital Filtering
+(Ministry of Health Criteria)
+↓
+TOPSIS Analysis
+(Hospital Ranking)
+↓
+Final Hospital Selection
+
 ---
 
 ## Methodology
@@ -148,3 +169,15 @@ Methods
 ---
 
 ## Project Structure
+dementia-hospital-location-selection
+
+data
+├ raw_data
+└ processed_data
+
+notebooks
+├ pca_analysis.ipynb
+└ topsis_analysis.ipynb
+
+report
+└ final_report.pdf
