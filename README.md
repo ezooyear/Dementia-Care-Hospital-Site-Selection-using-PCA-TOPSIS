@@ -161,10 +161,12 @@ This framework demonstrates how public healthcare data can be integrated with st
 
 ## Project Structure
 dementia-hospital-location-selection
+```text
+dementia-hospital-location-selection
 
 data
 ├── raw_data
-└──processed_data
+└── processed_data
 
 notebooks
 ├── 01_data_collection_and_merge.ipynb
@@ -173,4 +175,5 @@ notebooks
 └── 04_topsis_hospital_ranking.ipynb
 
 report
-└──final_report.pdf
+└── final_report.pdf
+```
