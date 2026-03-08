@@ -43,25 +43,13 @@ Data sources include:
 - Regional administrative datasets
 
 Due to licensing restrictions, the original datasets are not included in this repository.
+
 --- 
+
+
 ## Analysis Pipeline
 
-The project follows a two-stage analytical process.
-
-Data Collection
-↓
-Data Preprocessing
-↓
-PCA Analysis
-(Region Selection)
-↓
-Hospital Filtering
-(Ministry of Health Criteria)
-↓
-TOPSIS Analysis
-(Hospital Ranking)
-↓
-Final Hospital Selection
+Data Collection → Data Preprocessing → PCA (Region Selection) → Hospital Filtering (Ministry of Health Criteria) → TOPSIS (Hospital Ranking) → Final Hospital Selection
 
 ---
 
@@ -131,6 +119,7 @@ Top 3 hospital candidates:
 3. Suwon Samsung Nursing Hospital
 
 These hospitals demonstrated high accessibility, strong demand potential, and favorable surrounding infrastructure.
+This framework demonstrates how public healthcare data can be integrated with statistical methods to support location-based policy decision making.
 
 ---
 
@@ -152,17 +141,19 @@ These hospitals demonstrated high accessibility, strong demand potential, and fa
 
 ## Tech Stack
 
-Python  
-Pandas  
-Scikit-learn  
-Geopy  
-Folium  
-GeoJSON  
+**Languages & Libraries**
 
-Methods
+- Python
+- Pandas
+- Scikit-learn
+- Geopy
+- Folium
+- GeoJSON
 
-- PCA
-- MCDM
+**Methods**
+
+- Principal Component Analysis (PCA)
+- Multi-Criteria Decision Making (MCDM)
 - TOPSIS
 - Spatial Data Analysis
 
@@ -172,12 +163,14 @@ Methods
 dementia-hospital-location-selection
 
 data
-├ raw_data
-└ processed_data
+├── raw_data
+└──processed_data
 
 notebooks
-├ pca_analysis.ipynb
-└ topsis_analysis.ipynb
+├── 01_data_collection_and_merge.ipynb
+├── 02_data_preprocessing.ipynb
+├── 03_pca_region_selection.ipynb
+└── 04_topsis_hospital_ranking.ipynb
 
 report
-└ final_report.pdf
+└──final_report.pdf
